@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import TapsellPlus
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        TapsellPlus.initialize("qqmrbpaitpqkebqnqcisfmgpffnonkipcoksmfibqqgfigdjtbtlplhebbqdlljcsktafg")
+        TapsellPlus.setDebugMode(0)
+        
         return true
     }
 
