@@ -1,32 +1,32 @@
 PODS:
   - ChartboostSDK (7.3.0)
   - Google-Mobile-Ads-SDK (7.38.0)
-  - TapsellPlusSDK (1.0.0):
-    - TapsellPlusSDK/Default (= 1.0.0)
-  - TapsellPlusSDK/AdMobAdapter (1.0.0):
+  - TapsellPlusSDK (1.2.0):
+    - TapsellPlusSDK/Default (= 1.2.0)
+  - TapsellPlusSDK/AdMobAdapter (1.2.0):
     - Google-Mobile-Ads-SDK (= 7.38.0)
-    - TapsellPlusSDK/Core (~> 1.0.0)
-  - TapsellPlusSDK/ChartBoostAdapter (1.0.0):
+    - TapsellPlusSDK/Core (~> 1.2.0)
+  - TapsellPlusSDK/ChartBoostAdapter (1.2.0):
     - ChartboostSDK (= 7.3.0)
-    - TapsellPlusSDK/Core (~> 1.0.0)
-  - TapsellPlusSDK/Core (1.0.0)
-  - TapsellPlusSDK/Default (1.0.0):
-    - TapsellPlusSDK/AdMobAdapter (~> 1.0.0)
-    - TapsellPlusSDK/ChartBoostAdapter (~> 1.0.0)
-    - TapsellPlusSDK/Core (~> 1.0.0)
-    - TapsellPlusSDK/TapsellAdapter (~> 1.0.0)
-    - TapsellPlusSDK/UnityAdsAdapter (~> 1.0.0)
-  - TapsellPlusSDK/TapsellAdapter (1.0.0):
-    - TapsellPlusSDK/Core (~> 1.0.0)
-    - TapsellSDKv3 (= 1.1.0)
-  - TapsellPlusSDK/UnityAdsAdapter (1.0.0):
-    - TapsellPlusSDK/Core (~> 1.0.0)
+    - TapsellPlusSDK/Core (~> 1.2.0)
+  - TapsellPlusSDK/Core (1.2.0)
+  - TapsellPlusSDK/Default (1.2.0):
+    - TapsellPlusSDK/AdMobAdapter (~> 1.2.0)
+    - TapsellPlusSDK/ChartBoostAdapter (~> 1.2.0)
+    - TapsellPlusSDK/Core (~> 1.2.0)
+    - TapsellPlusSDK/TapsellAdapter (~> 1.2.0)
+    - TapsellPlusSDK/UnityAdsAdapter (~> 1.2.0)
+  - TapsellPlusSDK/TapsellAdapter (1.2.0):
+    - TapsellPlusSDK/Core (~> 1.2.0)
+    - TapsellSDKv3 (= 1.2.0)
+  - TapsellPlusSDK/UnityAdsAdapter (1.2.0):
+    - TapsellPlusSDK/Core (~> 1.2.0)
     - UnityAds (= 3.0.0)
-  - TapsellSDKv3 (1.1.0)
+  - TapsellSDKv3 (1.2.0)
   - UnityAds (3.0.0)
 
 DEPENDENCIES:
-  - TapsellPlusSDK (= 1.0.0)
+  - TapsellPlusSDK (= 1.2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -39,10 +39,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   ChartboostSDK: 63bbdcad37dd78012acaba1f904e82ddb0eb921d
   Google-Mobile-Ads-SDK: fec4a72b71a81302d3fd75454df3417c03c50ed5
-  TapsellPlusSDK: 38c7185f5d2cbb980d4a67e1d2c71869e4f9096f
-  TapsellSDKv3: 71edefe6154fb33863c3ccc623dcaa286ce24376
+  TapsellPlusSDK: f2a2409b7185dfcf1515582ec379704f6aa21510
+  TapsellSDKv3: 48c1e8ac0f2ab9054d78a8763e4335ab59702e1d
   UnityAds: ff7c0f477873f40daccd7c0bd0b656cb6cf5a2e5
 
-PODFILE CHECKSUM: 7b45f84a4ffa1e16a991678270c76b2cadb90789
+PODFILE CHECKSUM: c5a76c01ca5257a004fd13fdd0cbbc8b3932a706
 
 COCOAPODS: 1.7.3
