@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,81 +11,46 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mediator_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TapsellPlusSDK_SwiftSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DwQ-Ga-6Jr">
-                                <rect key="frame" x="8" y="28" width="359" height="270"/>
+                                <rect key="frame" x="8" y="8" width="359" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhZ-ql-oHV">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhZ-ql-oHV" userLabel="Interstitial Banner">
                                         <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
-                                        <state key="normal" title="Interstitial Banner 1"/>
+                                        <state key="normal" title="Interstitial Banner"/>
                                         <connections>
-                                            <action selector="getInterstitialBanner1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nrr-WN-jn7"/>
+                                            <action selector="getInterstitialBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0yo-RB-N2m"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvk-Y8-lwn">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zr-0i-1uC" userLabel="Rewarded Video">
                                         <rect key="frame" x="0.0" y="30" width="359" height="30"/>
-                                        <state key="normal" title="Interstitial Banner 2"/>
+                                        <state key="normal" title="Rewarded Video"/>
                                         <connections>
-                                            <action selector="getInterstitialBanner2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1kL-Pl-9jz"/>
+                                            <action selector="getRewardedVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jFb-Kh-tAA"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Zr-0i-1uC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH9-Ms-57D" userLabel="Banner">
                                         <rect key="frame" x="0.0" y="60" width="359" height="30"/>
-                                        <state key="normal" title="Rewarded Video 1"/>
+                                        <state key="normal" title="Banner"/>
                                         <connections>
-                                            <action selector="getRewardedVideo1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cc3-Le-aGu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbg-Q1-YXH">
-                                        <rect key="frame" x="0.0" y="90" width="359" height="30"/>
-                                        <state key="normal" title="Rewarded Video 2"/>
-                                        <connections>
-                                            <action selector="getRewardedVideo2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8H-dP-zcm"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-CL-cSi">
-                                        <rect key="frame" x="0.0" y="120" width="359" height="30"/>
-                                        <state key="normal" title="Rewarded Video 3"/>
-                                        <connections>
-                                            <action selector="getRewardedVideo3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chJ-F0-rfa"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62p-Gi-r9g">
-                                        <rect key="frame" x="0.0" y="150" width="359" height="30"/>
-                                        <state key="normal" title="Rewarded Video 4"/>
-                                        <connections>
-                                            <action selector="getRewardedVideo4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vet-dZ-QD6"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH9-Ms-57D">
-                                        <rect key="frame" x="0.0" y="180" width="359" height="30"/>
-                                        <state key="normal" title="Banner 1"/>
-                                        <connections>
-                                            <action selector="getBanner1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6jA-6J-t09"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSf-Co-bCK">
-                                        <rect key="frame" x="0.0" y="210" width="359" height="30"/>
-                                        <state key="normal" title="Banner 2"/>
-                                        <connections>
-                                            <action selector="getBanner2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s5I-1J-IVt"/>
+                                            <action selector="getBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ToJ-iL-TLm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qsp-LT-e0l">
-                                        <rect key="frame" x="0.0" y="240" width="359" height="30"/>
+                                        <rect key="frame" x="0.0" y="90" width="359" height="30"/>
                                         <state key="normal" title="Native Banner"/>
                                         <connections>
-                                            <action selector="getNativeBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Alr-t7-8U9"/>
+                                            <action selector="getNativeBanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3jl-2E-nPq"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fu8-1u-YuJ">
-                                <rect key="frame" x="27.5" y="567" width="320" height="100"/>
+                                <rect key="frame" x="27.5" y="617" width="320" height="50"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SI0-Rh-7VR" customClass="TapsellPlusBannerView" customModule="TapsellPlus">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
@@ -95,14 +58,6 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="LEX-mO-apP"/>
                                             <constraint firstAttribute="height" constant="50" id="rxW-0j-WVZ"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSl-dC-5AK" customClass="TapsellPlusBannerView" customModule="TapsellPlus">
-                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="faU-Y7-zWt"/>
-                                            <constraint firstAttribute="width" constant="320" id="gsj-7l-b1C"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -154,7 +109,6 @@
                     </view>
                     <connections>
                         <outlet property="bannerView" destination="SI0-Rh-7VR" id="jmd-uX-QJc"/>
-                        <outlet property="bannerView2" destination="pSl-dC-5AK" id="0lk-Fd-5eE"/>
                         <outlet property="nativeBannerView" destination="Jgb-gj-iNf" id="Fjm-qf-CgP"/>
                     </connections>
                 </viewController>
